@@ -1,0 +1,39 @@
+<!--miniprogram/dati/dati.wxml-->
+<view class="page startPage" wx:if="{{page=='startPage'}}">
+  <button type="primary" bindtap="goGaming">开始游戏</button>
+</view>
+<view class="page gamingPage" wx:if="{{page=='gamingPage'}}">
+  <view class="title">{{currentTimu.quiz}}</view>
+  <view class="options">
+    <view class="optionsItem" wx:key="{{index}}"
+    wx:for="{{currentTimu.options}}" 
+    data-num="{{index+1}}" 
+    bindtap="chooseEvent"
+    class="{{ styleArr[index]   }}"
+    >
+    {{index+1}}、{{item}}
+    </view>
+  
+  </view>
+</view>
+<view class="page endPage" wx:if="{{page=='endPage'}}">
+  <view class="score">
+    恭喜您斩获了{{score}}分！
+  </view>
+
+  <view class="range">
+    <view>顶尖排行榜</view>
+    <view class="rangeList">
+      <view class="rangeItem" wx:for="{{rangeList}}">
+        <view class="range">{{index+1}}</view>
+        <view class="header">
+           <image src="{{item.avatarUrl}}"></image>
+        </view>
+        <view class="nickName">{{item.nickName}}</view>
+        <view class="score">{{item.score}}</view>
+      </view>
+    
+    </view>
+  
+  </view>
+</view>

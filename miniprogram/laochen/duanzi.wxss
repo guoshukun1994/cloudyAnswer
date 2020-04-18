@@ -1,0 +1,40 @@
+/* miniprogram/laochen/duanzi.wxss */
+
+.listItem{
+  width: 750rpx;
+  border-bottom: 1px solid #ddd;
+}
+.listItem .itemHeader{
+  display: flex;
+  align-items: center;
+}
+.listItem .headerimg image{
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 32rpx;
+  margin: 24rpx;
+}
+.listItem .itemHeader .username{
+  font-size: 28rpx;
+}
+.listItem .itemHeader .time{
+  font-size: 24rpx;
+  color: #aaa;
+}
+.listItem .itemContent{
+  padding: 0 24rpx 24rpx;
+}
+.itemFooter{
+  display: flex;
+}
+.itemFooter>view{
+  display: flex;
+  padding: 0 24rpx 24rpx;
+}
+.itemFooter>view image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.itemFooter>view text{
+  padding: 0 10rpx;
+}

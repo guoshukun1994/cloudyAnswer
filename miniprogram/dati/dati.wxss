@@ -1,0 +1,54 @@
+/* miniprogram/dati/dati.wxss */
+.page{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.gamingPage{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+
+}
+.gamingPage .title{
+  font-size: 40rpx;
+  padding: 50rpx 0;
+}
+
+.gamingPage .options{
+  width: 100%;
+ 
+}
+.gamingPage .optionsItem{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 16rpx;
+  border: 1px solid #ccc;
+
+
+}
+
+.success{
+  background: skyblue;
+}
+
+.fail{
+  background: orangered;
+}

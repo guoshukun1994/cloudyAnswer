@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "dati/dati",
+    "db/db",
+    "laochen/upload",
+    "laochen/duanzi",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "laochen/image",
+    "laochen/video"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云答题",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "laochen/duanzi",
+        "text": "段子",
+        "iconPath": "images/gx1.png",
+        "selectedIconPath": "images/gx2.png"
+      },
+      {
+        "pagePath": "laochen/image",
+        "text": "图片",
+        "iconPath": "images/img1.png",
+        "selectedIconPath": "images/img2.png"
+      },
+      {
+        "pagePath": "laochen/video",
+        "text": "视频",
+        "iconPath": "images/v1.png",
+        "selectedIconPath": "images/v2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
